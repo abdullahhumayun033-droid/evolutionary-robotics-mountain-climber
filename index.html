@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolutionary Robotics Mountain Climber | Abdullah Humayun</title>
+<style>
+:root{--bg:#080d18;--panel:#111a2c;--panel2:#17223a;--text:#eef4ff;--muted:#9fb0cb;--accent:#66e3a4;--accent2:#75b7ff;--border:rgba(255,255,255,.10)}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% 5%,rgba(102,227,164,.12),transparent 28%),linear-gradient(180deg,#080d18,#0d1424);color:var(--text);line-height:1.6}
+.wrap{width:min(1120px,92vw);margin:auto}.hero{padding:72px 0 46px;border-bottom:1px solid var(--border)}
+.badge{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:7px 12px;color:var(--accent);background:rgba(255,255,255,.03);font-size:.9rem}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.02;letter-spacing:-.045em;margin:18px 0 18px;max-width:950px}
+.lead{max-width:800px;color:var(--muted);font-size:1.15rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;text-decoration:none;color:var(--text);padding:11px 16px;border-radius:10px;border:1px solid var(--border);background:var(--panel);font-weight:650}.btn.primary{background:var(--accent);color:#06130d;border-color:transparent}
+main{padding:46px 0 72px}.card{background:linear-gradient(180deg,rgba(23,34,58,.96),rgba(17,26,44,.96));border:1px solid var(--border);border-radius:18px;padding:24px;margin-bottom:20px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.card h2{margin:0 0 10px;font-size:1.55rem}.card p{color:var(--muted)} video{width:100%;border-radius:14px;border:1px solid var(--border);background:#000;margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini{background:var(--panel2);border:1px solid var(--border);border-radius:14px;padding:18px}.mini h3{margin:0 0 6px}.mini p{margin:0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{padding:6px 9px;border:1px solid var(--border);border-radius:999px;color:#cfe0ff;font-size:.86rem}
+.note{border-left:3px solid var(--accent2);padding-left:15px;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:24px 0 38px;color:var(--muted);font-size:.92rem}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.hero{padding-top:48px}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="wrap">
+<span class="badge">CM3020 · Artificial Intelligence</span>
+<h1>Evolutionary Robotics: Mountain-Climbing Creatures</h1>
+<p class="lead">A PyBullet evolutionary-robotics project using genetically encoded robot morphology and motor control, URDF generation, physics simulation and genetic-algorithm search.</p>
+<div class="actions">
+<a class="btn primary" href="#demo">Watch demo highlight</a>
+<a class="btn" href="https://github.com/abdullahhumayun033-droid/evolutionary-robotics-mountain-climber" target="_blank" rel="noopener">View source on GitHub</a>
+</div></div></section>
+<main class="wrap">
+<section class="card" id="demo">
+<h2>Mountain-climbing demonstration</h2>
+<p>The recorded project presentation shows the evolved creature interacting with the mountain terrain in PyBullet. This short highlight is taken from the submitted presentation video.</p>
+<video controls preload="metadata" poster="assets/demo-poster.jpg"><source src="assets/demo-highlight.mp4" type="video/mp4"></video>
+</section>
+<section class="card">
+<h2>AI pipeline</h2>
+<div class="grid">
+<div class="mini"><h3>1. Encode</h3><p>Genomes describe link dimensions, joint configuration and motor-controller parameters.</p></div>
+<div class="mini"><h3>2. Simulate</h3><p>Genomes are converted into articulated URDF creatures and evaluated in PyBullet.</p></div>
+<div class="mini"><h3>3. Evolve</h3><p>Selection, crossover, mutation and elitism search for increasingly effective behaviours.</p></div>
+</div>
+<div class="tags"><span class="tag">Python</span><span class="tag">PyBullet</span><span class="tag">NumPy</span><span class="tag">Genetic Algorithms</span><span class="tag">Evolutionary Robotics</span><span class="tag">URDF</span></div>
+</section>
+<section class="card">
+<h2>Recovered project scope</h2>
+<p>The archive contains the creature genome, URDF generation, procedural motors, population/simulation code, tests and a recovered GA framework with mountain assets. The presentation also shows later terrain-aware Part B experiments and evolutionary learning curves.</p>
+<p class="note"><strong>Recovery note:</strong> the exact standalone final Part B experiment script visible in the recorded presentation was not present in the recovered ZIP. The repository therefore keeps the source and demo evidence separate rather than claiming full reproducibility of every chart.</p>
+<div class="actions"><a class="btn" href="README.md">Read full project documentation</a></div>
+</section>
+</main>
+<footer><div class="wrap">Abdullah Humayun · BSc Computer Science · University of London / Goldsmiths</div></footer>
+</body></html>
